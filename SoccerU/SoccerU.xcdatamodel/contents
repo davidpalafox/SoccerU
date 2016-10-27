@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="AdvancedStat" representedClassName="AdvancedStat" parentEntity="Stat" syncable="YES">
+        <attribute name="endingXCoordinate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endingYCoordinate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="AssistantCoach" representedClassName="AssistantCoach" parentEntity="User" syncable="YES">
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="assistantCoachCollection" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Formation" syncable="YES">
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="formationCollection" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Game" representedClassName="Game" syncable="YES">
+        <attribute name="gameOver" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="gamePlaying" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="halfTimeReached" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="myScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="opponentScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="overTime" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="myPlayerStats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndividualStat" inverseName="myGame" inverseEntity="IndividualStat" syncable="YES"/>
+        <relationship name="myTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="gameCollection" inverseEntity="Team" syncable="YES"/>
+        <relationship name="myTeamStats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeamStat" inverseName="myGame" inverseEntity="TeamStat" syncable="YES"/>
+        <relationship name="opponent" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OpponentTeam" inverseName="gameCollection" inverseEntity="OpponentTeam" syncable="YES"/>
+        <relationship name="opponentPlayerStats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndividualStat" inverseName="opponentGame" inverseEntity="IndividualStat" syncable="YES"/>
+        <relationship name="opponentTeamStats" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeamStat" inverseName="opponentGame" inverseEntity="TeamStat" syncable="YES"/>
+    </entity>
+    <entity name="GoalAssistStat" representedClassName="GoalAssistStat" parentEntity="Stat" syncable="YES">
+        <relationship name="goalOrAssist" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GoalAssistStat" inverseName="goalOrAssist" inverseEntity="GoalAssistStat" syncable="YES"/>
+    </entity>
+    <entity name="HeadCoach" representedClassName="HeadCoach" parentEntity="User" syncable="YES">
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="headCoach" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="IndividualStat" representedClassName="IndividualStat" parentEntity="StatCollection" syncable="YES">
+        <attribute name="time" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="myGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="myPlayerStats" inverseEntity="Game" syncable="YES"/>
+        <relationship name="opponentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="opponentPlayerStats" inverseEntity="Game" syncable="YES"/>
+        <relationship name="player" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="individualStatCollection" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <entity name="OpponentTeam" representedClassName="OpponentTeam" syncable="YES">
+        <attribute name="playerCollection" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="gameCollection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="opponent" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" parentEntity="User" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="individualStatCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="IndividualStat" inverseName="player" inverseEntity="IndividualStat" syncable="YES"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="playerCollection" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="SetPlay" syncable="YES">
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="setPlayCollection" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Stat" representedClassName="Stat" syncable="YES">
+        <attribute name="player" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="xCoordinate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="yCoordinate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="StatCollection" representedClassName="StatCollection" syncable="YES">
+        <attribute name="passesCompleted" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="passesIntercepted" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="advancedPassCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AdvancedStat" syncable="YES"/>
+        <relationship name="assistsCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoalAssistStat" syncable="YES"/>
+        <relationship name="crossesCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+        <relationship name="foulsCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+        <relationship name="goalsCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoalAssistStat" syncable="YES"/>
+        <relationship name="lostCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+        <relationship name="shotsOffGoalCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+        <relationship name="shotsOnGoalCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+        <relationship name="tacklesCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Stat" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES">
+        <attribute name="teamName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assistantCoachCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AssistantCoach" inverseName="team" inverseEntity="AssistantCoach" syncable="YES"/>
+        <relationship name="formationCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Formation" inverseName="team" inverseEntity="Formation" syncable="YES"/>
+        <relationship name="gameCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Game" inverseName="myTeam" inverseEntity="Game" syncable="YES"/>
+        <relationship name="headCoach" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HeadCoach" inverseName="team" inverseEntity="HeadCoach" syncable="YES"/>
+        <relationship name="opponentCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OpponentTeam" syncable="YES"/>
+        <relationship name="playerCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Player" inverseName="team" inverseEntity="Player" syncable="YES"/>
+        <relationship name="setPlayCollection" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SetPlay" inverseName="team" inverseEntity="SetPlay" syncable="YES"/>
+    </entity>
+    <entity name="TeamStat" representedClassName="TeamStat" parentEntity="StatCollection" syncable="YES">
+        <attribute name="possession" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="myGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="myTeamStats" inverseEntity="Game" syncable="YES"/>
+        <relationship name="opponentGame" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="opponentTeamStats" inverseEntity="Game" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName="User" isAbstract="YES" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AdvancedStat" positionX="304" positionY="566" width="128" height="75"/>
+        <element name="Formation" positionX="-450" positionY="90" width="128" height="58"/>
+        <element name="Game" positionX="97" positionY="107" width="128" height="240"/>
+        <element name="GoalAssistStat" positionX="-207" positionY="585" width="128" height="60"/>
+        <element name="HeadCoach" positionX="124" positionY="-162" width="128" height="60"/>
+        <element name="IndividualStat" positionX="322" positionY="153" width="128" height="105"/>
+        <element name="OpponentTeam" positionX="79" positionY="-64" width="128" height="75"/>
+        <element name="Player" positionX="-261" positionY="-171" width="128" height="90"/>
+        <element name="SetPlay" positionX="-450" positionY="-63" width="128" height="58"/>
+        <element name="Stat" positionX="81" positionY="662" width="128" height="105"/>
+        <element name="StatCollection" positionX="99" positionY="411" width="128" height="210"/>
+        <element name="Team" positionX="-146" positionY="-63" width="128" height="165"/>
+        <element name="TeamStat" positionX="-198" positionY="144" width="128" height="90"/>
+        <element name="User" positionX="-56" positionY="-288" width="128" height="90"/>
+        <element name="AssistantCoach" positionX="-56" positionY="-168" width="128" height="60"/>
+    </elements>
+</model>

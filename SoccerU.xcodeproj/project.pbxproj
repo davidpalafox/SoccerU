@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B69B50861DB96B58008EF95D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50851DB96B58008EF95D /* main.m */; };
+		B69B50891DB96B58008EF95D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50881DB96B58008EF95D /* AppDelegate.m */; };
+		B69B508F1DB96B58008EF95D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69B508D1DB96B58008EF95D /* Main.storyboard */; };
+		B69B50941DB96B58008EF95D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B69B50931DB96B58008EF95D /* Assets.xcassets */; };
+		B69B50971DB96B58008EF95D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B69B50951DB96B58008EF95D /* LaunchScreen.storyboard */; };
+		B69B50A21DB96B58008EF95D /* SoccerUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50A11DB96B58008EF95D /* SoccerUTests.m */; };
+		B69B50AD1DB96B58008EF95D /* SoccerUUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50AC1DB96B58008EF95D /* SoccerUUITests.m */; };
+		B69B50BB1DB96B7C008EF95D /* SoccerU.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = B69B50BA1DB96B7C008EF95D /* SoccerU.xcdatamodel */; };
+		B69B50F01DB96BB6008EF95D /* Team+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50BD1DB96BB6008EF95D /* Team+CoreDataClass.m */; };
+		B69B50F11DB96BB6008EF95D /* Team+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50BF1DB96BB6008EF95D /* Team+CoreDataProperties.m */; };
+		B69B50F21DB96BB6008EF95D /* AssistantCoach+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50C11DB96BB6008EF95D /* AssistantCoach+CoreDataClass.m */; };
+		B69B50F31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50C31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m */; };
+		B69B50F41DB96BB6008EF95D /* HeadCoach+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50C51DB96BB6008EF95D /* HeadCoach+CoreDataClass.m */; };
+		B69B50F51DB96BB6008EF95D /* HeadCoach+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50C71DB96BB6008EF95D /* HeadCoach+CoreDataProperties.m */; };
+		B69B50F61DB96BB6008EF95D /* IndividualStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50C91DB96BB6008EF95D /* IndividualStat+CoreDataClass.m */; };
+		B69B50F71DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50CB1DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m */; };
+		B69B50F81DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50CD1DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.m */; };
+		B69B50F91DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50CF1DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m */; };
+		B69B50FA1DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D11DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m */; };
+		B69B50FB1DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D31DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.m */; };
+		B69B50FC1DB96BB6008EF95D /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D51DB96BB6008EF95D /* User+CoreDataClass.m */; };
+		B69B50FD1DB96BB6008EF95D /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D71DB96BB6008EF95D /* User+CoreDataProperties.m */; };
+		B69B50FE1DB96BB6008EF95D /* TeamStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D91DB96BB6008EF95D /* TeamStat+CoreDataClass.m */; };
+		B69B50FF1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */; };
+		B69B51001DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */; };
+		B69B51011DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */; };
+		B69B51021DB96BB6008EF95D /* StatCollection+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */; };
+		B69B51031DB96BB6008EF95D /* StatCollection+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E31DB96BB6008EF95D /* StatCollection+CoreDataProperties.m */; };
+		B69B51041DB96BB6008EF95D /* Game+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E51DB96BB6008EF95D /* Game+CoreDataClass.m */; };
+		B69B51051DB96BB6008EF95D /* Game+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E71DB96BB6008EF95D /* Game+CoreDataProperties.m */; };
+		B69B51061DB96BB6008EF95D /* Stat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E91DB96BB6008EF95D /* Stat+CoreDataClass.m */; };
+		B69B51071DB96BB6008EF95D /* Stat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50EB1DB96BB6008EF95D /* Stat+CoreDataProperties.m */; };
+		B69B51081DB96BB6008EF95D /* Player+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50ED1DB96BB6008EF95D /* Player+CoreDataClass.m */; };
+		B69B51091DB96BB6008EF95D /* Player+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50EF1DB96BB6008EF95D /* Player+CoreDataProperties.m */; };
+		B69B51121DBFBE6F008EF95D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B510C1DBFBE6F008EF95D /* Bolts.framework */; };
+		B69B51131DBFBE6F008EF95D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B510D1DBFBE6F008EF95D /* Parse.framework */; };
+		B69B51141DBFBE6F008EF95D /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B510E1DBFBE6F008EF95D /* ParseFacebookUtils.framework */; };
+		B69B51151DBFBE6F008EF95D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B510F1DBFBE6F008EF95D /* ParseFacebookUtilsV4.framework */; };
+		B69B51161DBFBE6F008EF95D /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51101DBFBE6F008EF95D /* ParseTwitterUtils.framework */; };
+		B69B51171DBFBE6F008EF95D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51111DBFBE6F008EF95D /* ParseUI.framework */; };
+		B69B511A1DBFBE9E008EF95D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51191DBFBE9E008EF95D /* AudioToolbox.framework */; };
+		B69B511C1DBFBEA5008EF95D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B511B1DBFBEA5008EF95D /* CFNetwork.framework */; };
+		B69B511E1DBFBEB6008EF95D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B511D1DBFBEB6008EF95D /* CoreGraphics.framework */; };
+		B69B51201DBFBEBC008EF95D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B511F1DBFBEBC008EF95D /* CoreLocation.framework */; };
+		B69B51221DBFBEC5008EF95D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51211DBFBEC5008EF95D /* QuartzCore.framework */; };
+		B69B51241DBFBED2008EF95D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51231DBFBED2008EF95D /* Security.framework */; };
+		B69B51261DBFBED9008EF95D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51251DBFBED9008EF95D /* StoreKit.framework */; };
+		B69B51281DBFBEE0008EF95D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51271DBFBEE0008EF95D /* SystemConfiguration.framework */; };
+		B69B512A1DBFBEE7008EF95D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B51291DBFBEE7008EF95D /* libz.tbd */; };
+		B69B512C1DBFBEF1008EF95D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B69B512B1DBFBEF1008EF95D /* libsqlite3.tbd */; };
+		B69B512F1DBFBF8E008EF95D /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B512E1DBFBF8E008EF95D /* DataModel.m */; };
+		B69B51321DBFC2EF008EF95D /* LogInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B51311DBFC2EF008EF95D /* LogInVC.m */; };
+		B69B51361DC291A5008EF95D /* soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = B69B51351DC291A5008EF95D /* soccer.png */; };
+		B69B51391DC2A5E1008EF95D /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B51381DC2A5E1008EF95D /* SignUpVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B69B509E1DB96B58008EF95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B69B50791DB96B58008EF95D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69B50801DB96B58008EF95D;
+			remoteInfo = SoccerU;
+		};
+		B69B50A91DB96B58008EF95D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B69B50791DB96B58008EF95D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B69B50801DB96B58008EF95D;
+			remoteInfo = SoccerU;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B69B50811DB96B58008EF95D /* SoccerU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerU.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69B50851DB96B58008EF95D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B69B50871DB96B58008EF95D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B69B50881DB96B58008EF95D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B69B508E1DB96B58008EF95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B69B50931DB96B58008EF95D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B69B50961DB96B58008EF95D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B69B50981DB96B58008EF95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69B509D1DB96B58008EF95D /* SoccerUTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerUTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69B50A11DB96B58008EF95D /* SoccerUTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoccerUTests.m; sourceTree = "<group>"; };
+		B69B50A31DB96B58008EF95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69B50A81DB96B58008EF95D /* SoccerUUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoccerUUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B69B50AC1DB96B58008EF95D /* SoccerUUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoccerUUITests.m; sourceTree = "<group>"; };
+		B69B50AE1DB96B58008EF95D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B69B50BA1DB96B7C008EF95D /* SoccerU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoccerU.xcdatamodel; sourceTree = "<group>"; };
+		B69B50BC1DB96BB6008EF95D /* Team+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Team+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50BD1DB96BB6008EF95D /* Team+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Team+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50BE1DB96BB6008EF95D /* Team+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Team+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50BF1DB96BB6008EF95D /* Team+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Team+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50C01DB96BB6008EF95D /* AssistantCoach+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AssistantCoach+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50C11DB96BB6008EF95D /* AssistantCoach+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AssistantCoach+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50C21DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AssistantCoach+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50C31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AssistantCoach+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50C41DB96BB6008EF95D /* HeadCoach+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HeadCoach+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50C51DB96BB6008EF95D /* HeadCoach+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HeadCoach+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50C61DB96BB6008EF95D /* HeadCoach+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HeadCoach+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50C71DB96BB6008EF95D /* HeadCoach+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HeadCoach+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50C81DB96BB6008EF95D /* IndividualStat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IndividualStat+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50C91DB96BB6008EF95D /* IndividualStat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IndividualStat+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50CA1DB96BB6008EF95D /* IndividualStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IndividualStat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50CB1DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IndividualStat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50CC1DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoalAssistStat+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50CD1DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoalAssistStat+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50CE1DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GoalAssistStat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50CF1DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GoalAssistStat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50D01DB96BB6008EF95D /* OpponentTeam+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpponentTeam+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50D11DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpponentTeam+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50D21DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OpponentTeam+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50D31DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OpponentTeam+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50D41DB96BB6008EF95D /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50D51DB96BB6008EF95D /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50D61DB96BB6008EF95D /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50D71DB96BB6008EF95D /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50D81DB96BB6008EF95D /* TeamStat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TeamStat+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50D91DB96BB6008EF95D /* TeamStat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TeamStat+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50DA1DB96BB6008EF95D /* TeamStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TeamStat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TeamStat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50DC1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdvancedStat+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdvancedStat+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50DE1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdvancedStat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdvancedStat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50E01DB96BB6008EF95D /* StatCollection+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatCollection+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatCollection+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50E21DB96BB6008EF95D /* StatCollection+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatCollection+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50E31DB96BB6008EF95D /* StatCollection+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatCollection+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50E41DB96BB6008EF95D /* Game+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Game+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50E51DB96BB6008EF95D /* Game+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Game+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50E61DB96BB6008EF95D /* Game+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Game+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50E71DB96BB6008EF95D /* Game+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Game+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50E81DB96BB6008EF95D /* Stat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stat+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50E91DB96BB6008EF95D /* Stat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Stat+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50EA1DB96BB6008EF95D /* Stat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50EB1DB96BB6008EF95D /* Stat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Stat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B50EC1DB96BB6008EF95D /* Player+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Player+CoreDataClass.h"; sourceTree = "<group>"; };
+		B69B50ED1DB96BB6008EF95D /* Player+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Player+CoreDataClass.m"; sourceTree = "<group>"; };
+		B69B50EE1DB96BB6008EF95D /* Player+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Player+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B69B50EF1DB96BB6008EF95D /* Player+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Player+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B69B510C1DBFBE6F008EF95D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B69B510D1DBFBE6F008EF95D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B69B510E1DBFBE6F008EF95D /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		B69B510F1DBFBE6F008EF95D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		B69B51101DBFBE6F008EF95D /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		B69B51111DBFBE6F008EF95D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		B69B51191DBFBE9E008EF95D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B69B511B1DBFBEA5008EF95D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B69B511D1DBFBEB6008EF95D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B69B511F1DBFBEBC008EF95D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B69B51211DBFBEC5008EF95D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B69B51231DBFBED2008EF95D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B69B51251DBFBED9008EF95D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B69B51271DBFBEE0008EF95D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B69B51291DBFBEE7008EF95D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B69B512B1DBFBEF1008EF95D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		B69B512D1DBFBF8E008EF95D /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		B69B512E1DBFBF8E008EF95D /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
+		B69B51301DBFC2EF008EF95D /* LogInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogInVC.h; path = ../LogInVC.h; sourceTree = "<group>"; };
+		B69B51311DBFC2EF008EF95D /* LogInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogInVC.m; path = ../LogInVC.m; sourceTree = "<group>"; };
+		B69B51351DC291A5008EF95D /* soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccer.png; sourceTree = "<group>"; };
+		B69B51371DC2A5E1008EF95D /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
+		B69B51381DC2A5E1008EF95D /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B69B507E1DB96B58008EF95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69B512C1DBFBEF1008EF95D /* libsqlite3.tbd in Frameworks */,
+				B69B512A1DBFBEE7008EF95D /* libz.tbd in Frameworks */,
+				B69B51281DBFBEE0008EF95D /* SystemConfiguration.framework in Frameworks */,
+				B69B51261DBFBED9008EF95D /* StoreKit.framework in Frameworks */,
+				B69B51241DBFBED2008EF95D /* Security.framework in Frameworks */,
+				B69B51221DBFBEC5008EF95D /* QuartzCore.framework in Frameworks */,
+				B69B51201DBFBEBC008EF95D /* CoreLocation.framework in Frameworks */,
+				B69B511E1DBFBEB6008EF95D /* CoreGraphics.framework in Frameworks */,
+				B69B511C1DBFBEA5008EF95D /* CFNetwork.framework in Frameworks */,
+				B69B511A1DBFBE9E008EF95D /* AudioToolbox.framework in Frameworks */,
+				B69B51171DBFBE6F008EF95D /* ParseUI.framework in Frameworks */,
+				B69B51131DBFBE6F008EF95D /* Parse.framework in Frameworks */,
+				B69B51121DBFBE6F008EF95D /* Bolts.framework in Frameworks */,
+				B69B51151DBFBE6F008EF95D /* ParseFacebookUtilsV4.framework in Frameworks */,
+				B69B51141DBFBE6F008EF95D /* ParseFacebookUtils.framework in Frameworks */,
+				B69B51161DBFBE6F008EF95D /* ParseTwitterUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B509A1DB96B58008EF95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B50A51DB96B58008EF95D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B69B50781DB96B58008EF95D = {
+			isa = PBXGroup;
+			children = (
+				B69B510B1DBFBE6F008EF95D /* parse-library-1 */,
+				B69B50831DB96B58008EF95D /* SoccerU */,
+				B69B50A01DB96B58008EF95D /* SoccerUTests */,
+				B69B50AB1DB96B58008EF95D /* SoccerUUITests */,
+				B69B50821DB96B58008EF95D /* Products */,
+				B69B51181DBFBE9E008EF95D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B69B50821DB96B58008EF95D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B69B50811DB96B58008EF95D /* SoccerU.app */,
+				B69B509D1DB96B58008EF95D /* SoccerUTests.xctest */,
+				B69B50A81DB96B58008EF95D /* SoccerUUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B69B50831DB96B58008EF95D /* SoccerU */ = {
+			isa = PBXGroup;
+			children = (
+				B69B51351DC291A5008EF95D /* soccer.png */,
+				B69B51331DBFC33B008EF95D /* ViewController */,
+				B69B510A1DBFB872008EF95D /* Model */,
+				B69B50871DB96B58008EF95D /* AppDelegate.h */,
+				B69B50881DB96B58008EF95D /* AppDelegate.m */,
+				B69B512D1DBFBF8E008EF95D /* DataModel.h */,
+				B69B512E1DBFBF8E008EF95D /* DataModel.m */,
+				B69B508D1DB96B58008EF95D /* Main.storyboard */,
+				B69B50931DB96B58008EF95D /* Assets.xcassets */,
+				B69B50951DB96B58008EF95D /* LaunchScreen.storyboard */,
+				B69B50BA1DB96B7C008EF95D /* SoccerU.xcdatamodel */,
+				B69B50981DB96B58008EF95D /* Info.plist */,
+				B69B50841DB96B58008EF95D /* Supporting Files */,
+			);
+			path = SoccerU;
+			sourceTree = "<group>";
+		};
+		B69B50841DB96B58008EF95D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B69B50851DB96B58008EF95D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B69B50A01DB96B58008EF95D /* SoccerUTests */ = {
+			isa = PBXGroup;
+			children = (
+				B69B50A11DB96B58008EF95D /* SoccerUTests.m */,
+				B69B50A31DB96B58008EF95D /* Info.plist */,
+			);
+			path = SoccerUTests;
+			sourceTree = "<group>";
+		};
+		B69B50AB1DB96B58008EF95D /* SoccerUUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B69B50AC1DB96B58008EF95D /* SoccerUUITests.m */,
+				B69B50AE1DB96B58008EF95D /* Info.plist */,
+			);
+			path = SoccerUUITests;
+			sourceTree = "<group>";
+		};
+		B69B510A1DBFB872008EF95D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B69B50BC1DB96BB6008EF95D /* Team+CoreDataClass.h */,
+				B69B50BD1DB96BB6008EF95D /* Team+CoreDataClass.m */,
+				B69B50BE1DB96BB6008EF95D /* Team+CoreDataProperties.h */,
+				B69B50BF1DB96BB6008EF95D /* Team+CoreDataProperties.m */,
+				B69B50C01DB96BB6008EF95D /* AssistantCoach+CoreDataClass.h */,
+				B69B50C11DB96BB6008EF95D /* AssistantCoach+CoreDataClass.m */,
+				B69B50C21DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.h */,
+				B69B50C31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m */,
+				B69B50C41DB96BB6008EF95D /* HeadCoach+CoreDataClass.h */,
+				B69B50C51DB96BB6008EF95D /* HeadCoach+CoreDataClass.m */,
+				B69B50C61DB96BB6008EF95D /* HeadCoach+CoreDataProperties.h */,
+				B69B50C71DB96BB6008EF95D /* HeadCoach+CoreDataProperties.m */,
+				B69B50C81DB96BB6008EF95D /* IndividualStat+CoreDataClass.h */,
+				B69B50C91DB96BB6008EF95D /* IndividualStat+CoreDataClass.m */,
+				B69B50CA1DB96BB6008EF95D /* IndividualStat+CoreDataProperties.h */,
+				B69B50CB1DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m */,
+				B69B50CC1DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.h */,
+				B69B50CD1DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.m */,
+				B69B50CE1DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.h */,
+				B69B50CF1DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m */,
+				B69B50D01DB96BB6008EF95D /* OpponentTeam+CoreDataClass.h */,
+				B69B50D11DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m */,
+				B69B50D21DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.h */,
+				B69B50D31DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.m */,
+				B69B50D41DB96BB6008EF95D /* User+CoreDataClass.h */,
+				B69B50D51DB96BB6008EF95D /* User+CoreDataClass.m */,
+				B69B50D61DB96BB6008EF95D /* User+CoreDataProperties.h */,
+				B69B50D71DB96BB6008EF95D /* User+CoreDataProperties.m */,
+				B69B50D81DB96BB6008EF95D /* TeamStat+CoreDataClass.h */,
+				B69B50D91DB96BB6008EF95D /* TeamStat+CoreDataClass.m */,
+				B69B50DA1DB96BB6008EF95D /* TeamStat+CoreDataProperties.h */,
+				B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */,
+				B69B50DC1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.h */,
+				B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */,
+				B69B50DE1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.h */,
+				B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */,
+				B69B50E01DB96BB6008EF95D /* StatCollection+CoreDataClass.h */,
+				B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */,
+				B69B50E21DB96BB6008EF95D /* StatCollection+CoreDataProperties.h */,
+				B69B50E31DB96BB6008EF95D /* StatCollection+CoreDataProperties.m */,
+				B69B50E41DB96BB6008EF95D /* Game+CoreDataClass.h */,
+				B69B50E51DB96BB6008EF95D /* Game+CoreDataClass.m */,
+				B69B50E61DB96BB6008EF95D /* Game+CoreDataProperties.h */,
+				B69B50E71DB96BB6008EF95D /* Game+CoreDataProperties.m */,
+				B69B50E81DB96BB6008EF95D /* Stat+CoreDataClass.h */,
+				B69B50E91DB96BB6008EF95D /* Stat+CoreDataClass.m */,
+				B69B50EA1DB96BB6008EF95D /* Stat+CoreDataProperties.h */,
+				B69B50EB1DB96BB6008EF95D /* Stat+CoreDataProperties.m */,
+				B69B50EC1DB96BB6008EF95D /* Player+CoreDataClass.h */,
+				B69B50ED1DB96BB6008EF95D /* Player+CoreDataClass.m */,
+				B69B50EE1DB96BB6008EF95D /* Player+CoreDataProperties.h */,
+				B69B50EF1DB96BB6008EF95D /* Player+CoreDataProperties.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B69B510B1DBFBE6F008EF95D /* parse-library-1 */ = {
+			isa = PBXGroup;
+			children = (
+				B69B510C1DBFBE6F008EF95D /* Bolts.framework */,
+				B69B510D1DBFBE6F008EF95D /* Parse.framework */,
+				B69B510E1DBFBE6F008EF95D /* ParseFacebookUtils.framework */,
+				B69B510F1DBFBE6F008EF95D /* ParseFacebookUtilsV4.framework */,
+				B69B51101DBFBE6F008EF95D /* ParseTwitterUtils.framework */,
+				B69B51111DBFBE6F008EF95D /* ParseUI.framework */,
+			);
+			path = "parse-library-1";
+			sourceTree = "<group>";
+		};
+		B69B51181DBFBE9E008EF95D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B69B512B1DBFBEF1008EF95D /* libsqlite3.tbd */,
+				B69B51291DBFBEE7008EF95D /* libz.tbd */,
+				B69B51271DBFBEE0008EF95D /* SystemConfiguration.framework */,
+				B69B51251DBFBED9008EF95D /* StoreKit.framework */,
+				B69B51231DBFBED2008EF95D /* Security.framework */,
+				B69B51211DBFBEC5008EF95D /* QuartzCore.framework */,
+				B69B511F1DBFBEBC008EF95D /* CoreLocation.framework */,
+				B69B511D1DBFBEB6008EF95D /* CoreGraphics.framework */,
+				B69B511B1DBFBEA5008EF95D /* CFNetwork.framework */,
+				B69B51191DBFBE9E008EF95D /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B69B51331DBFC33B008EF95D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B69B51301DBFC2EF008EF95D /* LogInVC.h */,
+				B69B51311DBFC2EF008EF95D /* LogInVC.m */,
+				B69B51371DC2A5E1008EF95D /* SignUpVC.h */,
+				B69B51381DC2A5E1008EF95D /* SignUpVC.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B69B50801DB96B58008EF95D /* SoccerU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69B50B11DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerU" */;
+			buildPhases = (
+				B69B507D1DB96B58008EF95D /* Sources */,
+				B69B507E1DB96B58008EF95D /* Frameworks */,
+				B69B507F1DB96B58008EF95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoccerU;
+			productName = SoccerU;
+			productReference = B69B50811DB96B58008EF95D /* SoccerU.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B69B509C1DB96B58008EF95D /* SoccerUTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69B50B41DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerUTests" */;
+			buildPhases = (
+				B69B50991DB96B58008EF95D /* Sources */,
+				B69B509A1DB96B58008EF95D /* Frameworks */,
+				B69B509B1DB96B58008EF95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69B509F1DB96B58008EF95D /* PBXTargetDependency */,
+			);
+			name = SoccerUTests;
+			productName = SoccerUTests;
+			productReference = B69B509D1DB96B58008EF95D /* SoccerUTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B69B50A71DB96B58008EF95D /* SoccerUUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B69B50B71DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerUUITests" */;
+			buildPhases = (
+				B69B50A41DB96B58008EF95D /* Sources */,
+				B69B50A51DB96B58008EF95D /* Frameworks */,
+				B69B50A61DB96B58008EF95D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B69B50AA1DB96B58008EF95D /* PBXTargetDependency */,
+			);
+			name = SoccerUUITests;
+			productName = SoccerUUITests;
+			productReference = B69B50A81DB96B58008EF95D /* SoccerUUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B69B50791DB96B58008EF95D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = David_Palafox;
+				TargetAttributes = {
+					B69B50801DB96B58008EF95D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5J6HZ23C9A;
+						ProvisioningStyle = Automatic;
+					};
+					B69B509C1DB96B58008EF95D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B69B50801DB96B58008EF95D;
+					};
+					B69B50A71DB96B58008EF95D = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B69B50801DB96B58008EF95D;
+					};
+				};
+			};
+			buildConfigurationList = B69B507C1DB96B58008EF95D /* Build configuration list for PBXProject "SoccerU" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B69B50781DB96B58008EF95D;
+			productRefGroup = B69B50821DB96B58008EF95D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B69B50801DB96B58008EF95D /* SoccerU */,
+				B69B509C1DB96B58008EF95D /* SoccerUTests */,
+				B69B50A71DB96B58008EF95D /* SoccerUUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B69B507F1DB96B58008EF95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69B51361DC291A5008EF95D /* soccer.png in Resources */,
+				B69B50971DB96B58008EF95D /* LaunchScreen.storyboard in Resources */,
+				B69B50941DB96B58008EF95D /* Assets.xcassets in Resources */,
+				B69B508F1DB96B58008EF95D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B509B1DB96B58008EF95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B50A61DB96B58008EF95D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B69B507D1DB96B58008EF95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69B50FA1DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m in Sources */,
+				B69B50F31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m in Sources */,
+				B69B51021DB96BB6008EF95D /* StatCollection+CoreDataClass.m in Sources */,
+				B69B51091DB96BB6008EF95D /* Player+CoreDataProperties.m in Sources */,
+				B69B50FB1DB96BB6008EF95D /* OpponentTeam+CoreDataProperties.m in Sources */,
+				B69B50891DB96B58008EF95D /* AppDelegate.m in Sources */,
+				B69B50FE1DB96BB6008EF95D /* TeamStat+CoreDataClass.m in Sources */,
+				B69B50F21DB96BB6008EF95D /* AssistantCoach+CoreDataClass.m in Sources */,
+				B69B512F1DBFBF8E008EF95D /* DataModel.m in Sources */,
+				B69B50861DB96B58008EF95D /* main.m in Sources */,
+				B69B50F61DB96BB6008EF95D /* IndividualStat+CoreDataClass.m in Sources */,
+				B69B50F41DB96BB6008EF95D /* HeadCoach+CoreDataClass.m in Sources */,
+				B69B50F01DB96BB6008EF95D /* Team+CoreDataClass.m in Sources */,
+				B69B51011DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m in Sources */,
+				B69B51321DBFC2EF008EF95D /* LogInVC.m in Sources */,
+				B69B50F11DB96BB6008EF95D /* Team+CoreDataProperties.m in Sources */,
+				B69B50FC1DB96BB6008EF95D /* User+CoreDataClass.m in Sources */,
+				B69B51071DB96BB6008EF95D /* Stat+CoreDataProperties.m in Sources */,
+				B69B50FD1DB96BB6008EF95D /* User+CoreDataProperties.m in Sources */,
+				B69B50F51DB96BB6008EF95D /* HeadCoach+CoreDataProperties.m in Sources */,
+				B69B51391DC2A5E1008EF95D /* SignUpVC.m in Sources */,
+				B69B51031DB96BB6008EF95D /* StatCollection+CoreDataProperties.m in Sources */,
+				B69B51041DB96BB6008EF95D /* Game+CoreDataClass.m in Sources */,
+				B69B51081DB96BB6008EF95D /* Player+CoreDataClass.m in Sources */,
+				B69B50F81DB96BB6008EF95D /* GoalAssistStat+CoreDataClass.m in Sources */,
+				B69B50F91DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m in Sources */,
+				B69B51061DB96BB6008EF95D /* Stat+CoreDataClass.m in Sources */,
+				B69B50F71DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m in Sources */,
+				B69B50FF1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m in Sources */,
+				B69B51001DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m in Sources */,
+				B69B50BB1DB96B7C008EF95D /* SoccerU.xcdatamodel in Sources */,
+				B69B51051DB96BB6008EF95D /* Game+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B50991DB96B58008EF95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69B50A21DB96B58008EF95D /* SoccerUTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69B50A41DB96B58008EF95D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B69B50AD1DB96B58008EF95D /* SoccerUUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B69B509F1DB96B58008EF95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69B50801DB96B58008EF95D /* SoccerU */;
+			targetProxy = B69B509E1DB96B58008EF95D /* PBXContainerItemProxy */;
+		};
+		B69B50AA1DB96B58008EF95D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B69B50801DB96B58008EF95D /* SoccerU */;
+			targetProxy = B69B50A91DB96B58008EF95D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B69B508D1DB96B58008EF95D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69B508E1DB96B58008EF95D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B69B50951DB96B58008EF95D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B69B50961DB96B58008EF95D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B69B50AF1DB96B58008EF95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MOMC_NO_DELETE_RULE_WARNINGS = YES;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B69B50B01DB96B58008EF95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MOMC_NO_DELETE_RULE_WARNINGS = YES;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B69B50B21DB96B58008EF95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J6HZ23C9A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1",
+				);
+				INFOPLIST_FILE = SoccerU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MOMC_NO_DELETE_RULE_WARNINGS = YES;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerU";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B69B50B31DB96B58008EF95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5J6HZ23C9A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1",
+				);
+				INFOPLIST_FILE = SoccerU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MOMC_NO_DELETE_RULE_WARNINGS = YES;
+				MOMC_NO_INVERSE_RELATIONSHIP_WARNINGS = YES;
+				MOMC_NO_MAX_PROPERTY_COUNT_WARNINGS = YES;
+				MOMC_NO_WARNINGS = YES;
+				MOMC_SUPPRESS_INVERSE_TRANSIENT_ERROR = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerU";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B69B50B51DB96B58008EF95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoccerUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerUTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerU.app/SoccerU";
+			};
+			name = Debug;
+		};
+		B69B50B61DB96B58008EF95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SoccerUTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerUTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoccerU.app/SoccerU";
+			};
+			name = Release;
+		};
+		B69B50B81DB96B58008EF95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoccerUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerUUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoccerU;
+			};
+			name = Debug;
+		};
+		B69B50B91DB96B58008EF95D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoccerUUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Palafox.SoccerUUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SoccerU;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B69B507C1DB96B58008EF95D /* Build configuration list for PBXProject "SoccerU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69B50AF1DB96B58008EF95D /* Debug */,
+				B69B50B01DB96B58008EF95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69B50B11DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69B50B21DB96B58008EF95D /* Debug */,
+				B69B50B31DB96B58008EF95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69B50B41DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerUTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69B50B51DB96B58008EF95D /* Debug */,
+				B69B50B61DB96B58008EF95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B69B50B71DB96B58008EF95D /* Build configuration list for PBXNativeTarget "SoccerUUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B69B50B81DB96B58008EF95D /* Debug */,
+				B69B50B91DB96B58008EF95D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B69B50791DB96B58008EF95D /* Project object */;
+}
