@@ -2,7 +2,7 @@
 //  AdvancedStat+CoreDataProperties.h
 //  SoccerU
 //
-//  Created by Julie Palafox on 10/20/16.
+//  Created by Julie Palafox on 10/29/16.
 //  Copyright © 2016 David_Palafox. All rights reserved.
 //
 
@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<AdvancedStat *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *endingXCoordinate;
-@property (nullable, nonatomic, copy) NSString *endingYCoordinate;
+@property (nonatomic) float endingXCoordinate;
+@property (nonatomic) float endingYCoordinate;
 
 @end
 

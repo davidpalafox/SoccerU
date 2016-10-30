@@ -28,7 +28,6 @@
         configuration.server = @"http://radiant-atoll-84605.herokuapp.com/parse";
     }]];
     
-    /*
     NSManagedObjectContext *moc = [[[DataModel sharedDataModel] persistentContainer] viewContext];
     NSPersistentStoreCoordinator *coordinator = moc.persistentStoreCoordinator;
     NSArray<NSPersistentStore*> *stores = coordinator.persistentStores;
@@ -37,8 +36,26 @@
     for (NSPersistentStore *store in stores) {
         NSLog(@"%@", store.URL);
     }
-     
-     */
+    
+    [PFCloud callFunctionInBackground:@"getMainTeamInfo" withParameters:@{@"teamId":@"vRdYL5xVMB"} block:^(id team, NSError * _Nullable error) {
+        if (team)
+        {
+            NSLog(@"NAME: %@",team[@"teamName"]);
+            NSLog(@"PLAYER COLLECTION: %@",team[@"playerCollection"]);
+        }
+        else
+        {
+            if (error)
+            {
+                if (error.code == 0000000)
+                {
+                    
+                }
+            }
+        }
+    }];
+
+    
     return YES;
 }
 

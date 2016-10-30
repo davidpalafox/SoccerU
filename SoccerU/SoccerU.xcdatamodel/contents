@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="15G1004" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
     <entity name="AdvancedStat" representedClassName="AdvancedStat" parentEntity="Stat" syncable="YES">
-        <attribute name="endingXCoordinate" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="endingYCoordinate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endingXCoordinate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="endingYCoordinate" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="AssistantCoach" representedClassName="AssistantCoach" parentEntity="User" syncable="YES">
         <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="assistantCoachCollection" inverseEntity="Team" syncable="YES"/>
@@ -90,6 +90,7 @@
     </entity>
     <elements>
         <element name="AdvancedStat" positionX="304" positionY="566" width="128" height="75"/>
+        <element name="AssistantCoach" positionX="-56" positionY="-168" width="128" height="60"/>
         <element name="Formation" positionX="-450" positionY="90" width="128" height="58"/>
         <element name="Game" positionX="97" positionY="107" width="128" height="240"/>
         <element name="GoalAssistStat" positionX="-207" positionY="585" width="128" height="60"/>
@@ -103,6 +104,5 @@
         <element name="Team" positionX="-146" positionY="-63" width="128" height="165"/>
         <element name="TeamStat" positionX="-198" positionY="144" width="128" height="90"/>
         <element name="User" positionX="-56" positionY="-288" width="128" height="90"/>
-        <element name="AssistantCoach" positionX="-56" positionY="-168" width="128" height="60"/>
     </elements>
 </model>

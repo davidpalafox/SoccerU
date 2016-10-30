@@ -32,7 +32,6 @@
 		B69B50FE1DB96BB6008EF95D /* TeamStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50D91DB96BB6008EF95D /* TeamStat+CoreDataClass.m */; };
 		B69B50FF1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */; };
 		B69B51001DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */; };
-		B69B51011DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */; };
 		B69B51021DB96BB6008EF95D /* StatCollection+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */; };
 		B69B51031DB96BB6008EF95D /* StatCollection+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E31DB96BB6008EF95D /* StatCollection+CoreDataProperties.m */; };
 		B69B51041DB96BB6008EF95D /* Game+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B50E51DB96BB6008EF95D /* Game+CoreDataClass.m */; };
@@ -61,6 +60,8 @@
 		B69B51321DBFC2EF008EF95D /* LogInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B51311DBFC2EF008EF95D /* LogInVC.m */; };
 		B69B51361DC291A5008EF95D /* soccer.png in Resources */ = {isa = PBXBuildFile; fileRef = B69B51351DC291A5008EF95D /* soccer.png */; };
 		B69B51391DC2A5E1008EF95D /* SignUpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B69B51381DC2A5E1008EF95D /* SignUpVC.m */; };
+		B6C90AB31DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C90AB21DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.m */; };
+		B6C90AB61DC4ED700038F475 /* TeamVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C90AB51DC4ED700038F475 /* TeamVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,8 +131,6 @@
 		B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TeamStat+CoreDataProperties.m"; sourceTree = "<group>"; };
 		B69B50DC1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdvancedStat+CoreDataClass.h"; sourceTree = "<group>"; };
 		B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdvancedStat+CoreDataClass.m"; sourceTree = "<group>"; };
-		B69B50DE1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdvancedStat+CoreDataProperties.h"; sourceTree = "<group>"; };
-		B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdvancedStat+CoreDataProperties.m"; sourceTree = "<group>"; };
 		B69B50E01DB96BB6008EF95D /* StatCollection+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatCollection+CoreDataClass.h"; sourceTree = "<group>"; };
 		B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StatCollection+CoreDataClass.m"; sourceTree = "<group>"; };
 		B69B50E21DB96BB6008EF95D /* StatCollection+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StatCollection+CoreDataProperties.h"; sourceTree = "<group>"; };
@@ -171,6 +170,10 @@
 		B69B51351DC291A5008EF95D /* soccer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccer.png; sourceTree = "<group>"; };
 		B69B51371DC2A5E1008EF95D /* SignUpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpVC.h; sourceTree = "<group>"; };
 		B69B51381DC2A5E1008EF95D /* SignUpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpVC.m; sourceTree = "<group>"; };
+		B6C90AB11DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AdvancedStat+CoreDataProperties.h"; sourceTree = "<group>"; };
+		B6C90AB21DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AdvancedStat+CoreDataProperties.m"; sourceTree = "<group>"; };
+		B6C90AB41DC4ED700038F475 /* TeamVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamVC.h; sourceTree = "<group>"; };
+		B6C90AB51DC4ED700038F475 /* TeamVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,8 +322,8 @@
 				B69B50DB1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m */,
 				B69B50DC1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.h */,
 				B69B50DD1DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m */,
-				B69B50DE1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.h */,
-				B69B50DF1DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m */,
+				B6C90AB11DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.h */,
+				B6C90AB21DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.m */,
 				B69B50E01DB96BB6008EF95D /* StatCollection+CoreDataClass.h */,
 				B69B50E11DB96BB6008EF95D /* StatCollection+CoreDataClass.m */,
 				B69B50E21DB96BB6008EF95D /* StatCollection+CoreDataProperties.h */,
@@ -379,6 +382,8 @@
 				B69B51311DBFC2EF008EF95D /* LogInVC.m */,
 				B69B51371DC2A5E1008EF95D /* SignUpVC.h */,
 				B69B51381DC2A5E1008EF95D /* SignUpVC.m */,
+				B6C90AB41DC4ED700038F475 /* TeamVC.h */,
+				B6C90AB51DC4ED700038F475 /* TeamVC.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -518,6 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6C90AB61DC4ED700038F475 /* TeamVC.m in Sources */,
 				B69B50FA1DB96BB6008EF95D /* OpponentTeam+CoreDataClass.m in Sources */,
 				B69B50F31DB96BB6008EF95D /* AssistantCoach+CoreDataProperties.m in Sources */,
 				B69B51021DB96BB6008EF95D /* StatCollection+CoreDataClass.m in Sources */,
@@ -531,7 +537,6 @@
 				B69B50F61DB96BB6008EF95D /* IndividualStat+CoreDataClass.m in Sources */,
 				B69B50F41DB96BB6008EF95D /* HeadCoach+CoreDataClass.m in Sources */,
 				B69B50F01DB96BB6008EF95D /* Team+CoreDataClass.m in Sources */,
-				B69B51011DB96BB6008EF95D /* AdvancedStat+CoreDataProperties.m in Sources */,
 				B69B51321DBFC2EF008EF95D /* LogInVC.m in Sources */,
 				B69B50F11DB96BB6008EF95D /* Team+CoreDataProperties.m in Sources */,
 				B69B50FC1DB96BB6008EF95D /* User+CoreDataClass.m in Sources */,
@@ -546,6 +551,7 @@
 				B69B50F91DB96BB6008EF95D /* GoalAssistStat+CoreDataProperties.m in Sources */,
 				B69B51061DB96BB6008EF95D /* Stat+CoreDataClass.m in Sources */,
 				B69B50F71DB96BB6008EF95D /* IndividualStat+CoreDataProperties.m in Sources */,
+				B6C90AB31DC4E6DB0038F475 /* AdvancedStat+CoreDataProperties.m in Sources */,
 				B69B50FF1DB96BB6008EF95D /* TeamStat+CoreDataProperties.m in Sources */,
 				B69B51001DB96BB6008EF95D /* AdvancedStat+CoreDataClass.m in Sources */,
 				B69B50BB1DB96B7C008EF95D /* SoccerU.xcdatamodel in Sources */,
