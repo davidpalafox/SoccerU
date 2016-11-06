@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+
 @interface DataModel : NSObject
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;

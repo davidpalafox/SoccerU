@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "DataModel.h"
-#import "Player+CoreDataClass.h"
+
+@class DataModel;
 
 @interface LogInVC : UIViewController <UITextFieldDelegate>
 {

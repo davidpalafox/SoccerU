@@ -7,9 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
 #import "DataModel.h"
-#import "Player+CoreDataClass.h"
+#import "User+CoreDataClass.h"
 
 @interface AppDelegate ()
 
@@ -19,15 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-
-    
+    // intialize Parse with credentials - DO NOT GIVE OUT MASTER KEY
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         configuration.applicationId = @"GMS2015-2016";
         configuration.clientKey = @"MBK2015-2016";
         configuration.server = @"http://radiant-atoll-84605.herokuapp.com/parse";
     }]];
     
+    
+    //get managed object context to log sqllite file
     NSManagedObjectContext *moc = [[[DataModel sharedDataModel] persistentContainer] viewContext];
     NSPersistentStoreCoordinator *coordinator = moc.persistentStoreCoordinator;
     NSArray<NSPersistentStore*> *stores = coordinator.persistentStores;
@@ -37,24 +36,44 @@
         NSLog(@"%@", store.URL);
     }
     
-    [PFCloud callFunctionInBackground:@"getMainTeamInfo" withParameters:@{@"teamId":@"vRdYL5xVMB"} block:^(id team, NSError * _Nullable error) {
-        if (team)
-        {
-            NSLog(@"NAME: %@",team[@"teamName"]);
-            NSLog(@"PLAYER COLLECTION: %@",team[@"playerCollection"]);
-        }
-        else
-        {
-            if (error)
-            {
-                if (error.code == 0000000)
-                {
-                    
-                }
-            }
-        }
-    }];
+    /*
+    //clear core data
+    NSPersistentStore *store = [stores lastObject];
+    NSError *error;
+    NSURL *storeURL = store.URL;
+    [coordinator removePersistentStore:store error:&error];
+    [[NSFileManager defaultManager] removeItemAtPath:storeURL.path error:&error];
+    
+    //Make new persistent store for future saves
+    if (![coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        // do something with the error
+    }
+     */
+    
+    
+    
+    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    UIViewController *viewController;
+    
+    //if user already logged in - go to main tab page
+    if ([User currentUser])
+    {
+        viewController = [storyboard instantiateViewControllerWithIdentifier:@"MainTab"];
 
+    }
+    //else - go to log in page
+    else
+    {
+        viewController = [storyboard instantiateViewControllerWithIdentifier:@"NavControllerLogIn"];
+
+    }
+    //set root view controller
+    self.window.rootViewController = viewController;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -7,6 +7,9 @@
 //
 
 #import "LogInVC.h"
+#import "DataModel.h"
+#import "Player+CoreDataClass.h"
+
 @interface LogInVC ()
 
 @end
@@ -82,8 +85,7 @@
 
 -(IBAction)logInSelected:(id)sender
 {
-    //[self performSegueWithIdentifier:@"LogInToMain" sender:self];
-    /*
+    
     //attempt to log in wiht user credentials
     [PFUser logInWithUsernameInBackground:self.userNameTF.text password:self.passwordTF.text block:^(PFUser * _Nullable user, NSError * _Nullable error) {
         
@@ -106,6 +108,9 @@
                 
                 [dataModel saveContext];
             }
+            
+            //got to main tab
+            [self performSegueWithIdentifier:@"LogInToMainTab" sender:self];
         }
         //error logging in
         else
@@ -119,8 +124,7 @@
             }
         }
     }];
-     
-     */
+    
 }
 
 - (void)didReceiveMemoryWarning {

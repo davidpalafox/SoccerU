@@ -7,6 +7,10 @@
 //
 
 #import "SignUpVC.h"
+#import "DataModel.h"
+#import "Player+CoreDataClass.h"
+#import "AssistantCoach+CoreDataClass.h"
+#import "HeadCoach+CoreDataClass.h"
 
 @interface SignUpVC ()
 
@@ -27,9 +31,11 @@
     //adjust fonts to fit device size
     [self adjustFontSizes];
 
-    
     //set text field delegates
     [self setTextFieldDelegates];
+    
+    //set text field arrays
+    [self setTextFieldArrays];
 }
 
 -(void)adjustFontSizes
@@ -48,99 +54,44 @@
     self.numberTF.delegate = self;
 }
 
+-(void)setTextFieldArrays
+{
+    textFieldArray = [NSArray arrayWithObjects:self.firstNameTF, self.lastNameTF, self.emailTF, self.usernameTF, self.passwordTF, self.confirmPasswordTF, self.numberTF, nil];
+    textFieldIdenitifierArray = [NSArray arrayWithObjects:@"First Name", @"Last Name", @"Email", @"Username", @"Password", @"Confirm Password", @"Number", nil];
+}
+
 //once a text field is selected, if text is default, then clear for typing
 -(void)textFieldDidBeginEditing:(UITextField *)textField { //Keyboard becomes visible
-    if (textField == self.firstNameTF && [self.firstNameTF.text isEqualToString:@"First Name"])
+    //get index of text field in array
+    NSInteger textFieldIndex = [textFieldArray indexOfObject:textField];
+    
+    //if textfield passed in is equal to default string given to it - clear for ytpe
+    if ([textField.text isEqualToString:textFieldIdenitifierArray[textFieldIndex]])
     {
-        //clear first name text field
-        self.firstNameTF.text = @"";
+        textField.text = @"";
         
-    }
-    else if (textField == self.lastNameTF && [self.lastNameTF.text isEqualToString:@"Last Name"])
-    {
-        //clear last name text field
-        self.lastNameTF.text = @"";
-    }
-    else if (textField == self.emailTF && [self.emailTF.text isEqualToString:@"Email"])
-    {
-        //clear email text field
-        self.emailTF.text = @"";
-        
-    }
-    else if (textField == self.usernameTF && [self.usernameTF.text isEqualToString:@"Username"])
-    {
-        //clear username text field
-        self.usernameTF.text = @"";
-        
-    }
-    else if (textField == self.passwordTF && [self.passwordTF.text isEqualToString:@"Password"])
-    {
-        //clear password text field
-        self.passwordTF.text = @"";
-        
-        //make password text field secure
-        self.passwordTF.secureTextEntry = YES;
-    }
-    else if (textField == self.confirmPasswordTF && [self.confirmPasswordTF.text isEqualToString:@"Confirm Password"])
-    {
-        //clear confirm password text field
-        self.confirmPasswordTF.text = @"";
-        
-        //make confirm password text field secure
-        self.confirmPasswordTF.secureTextEntry = YES;
-    }
-    else if (textField == self.numberTF && [self.numberTF.text isEqualToString:@"Number"])
-    {
-        //clear number text field
-        self.numberTF.text = @"";
+        //if textfield is pass or confirm pass - turn on secure text for typing
+        if (textFieldIndex == 4 || textFieldIndex == 5)
+        {
+            textField.secureTextEntry = YES;
+        }
     }
 }
 
 //once a text field is deselected, if text is clear, go back to default
 -(void)textFieldDidEndEditing:(UITextField *)textField {
-    if (textField == self.firstNameTF && [self.firstNameTF.text isEqualToString:@""])
+    NSInteger textFieldIndex = [textFieldArray indexOfObject:textField];
+    
+    //set text field to default name if text is empty
+    if([textField.text isEqualToString:@""])
     {
-        //set first name text field to defaults
-        self.firstNameTF.text = @"First Name";
-        
-    }
-    else if (textField == self.lastNameTF && [self.lastNameTF.text isEqualToString:@""])
-    {
-        //set last name text field to default
-        self.lastNameTF.text = @"Last Name";
-    }
-    else if (textField == self.emailTF && [self.emailTF.text isEqualToString:@""])
-    {
-        //set email text field to default
-        self.emailTF.text = @"Email";
-        
-    }
-    else if (textField == self.usernameTF && [self.usernameTF.text isEqualToString:@""])
-    {
-        //set username text field to default
-        self.usernameTF.text = @"Username";
-        
-    }
-    else if (textField == self.passwordTF && [self.passwordTF.text isEqualToString:@""])
-    {
-        //set password text field to defautl
-        self.passwordTF.text = @"Password";
-        
-        //show password text field
-        self.passwordTF.secureTextEntry = NO;
-    }
-    else if (textField == self.confirmPasswordTF && [self.confirmPasswordTF.text isEqualToString:@""])
-    {
-        //set confirm password text field to default
-        self.confirmPasswordTF.text = @"Confirm Password";
-        
-        //show confirm password text field
-        self.confirmPasswordTF.secureTextEntry = NO;
-    }
-    else if (textField == self.numberTF && [self.numberTF.text isEqualToString:@""])
-    {
-        //set number text field to default
-        self.numberTF.text = @"Number";
+        textField.text = textFieldIdenitifierArray[textFieldIndex];
+       
+        //set secure text to no if on so user can see actual text identifier
+        if (textFieldIndex == 4 || textFieldIndex == 5)
+        {
+            textField.secureTextEntry = NO;
+        }
     }
 }
 

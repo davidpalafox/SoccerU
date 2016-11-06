@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "DataModel.h"
-#import "Player+CoreDataClass.h"
-#import "AssistantCoach+CoreDataClass.h"
-#import "HeadCoach+CoreDataClass.h"
+
+@class DataModel;
 
 @interface SignUpVC : UIViewController <UITextFieldDelegate>
 {
     DataModel *dataModel;
+    NSArray *textFieldArray;
+    NSArray *textFieldIdenitifierArray;
 }
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *userTypeSC;
@@ -27,6 +27,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordTF;
 @property (weak, nonatomic) IBOutlet UITextField *numberTF;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+
 - (IBAction)signUpSelected:(id)sender;
 - (IBAction)userTypeSCSelected:(id)sender;
 
